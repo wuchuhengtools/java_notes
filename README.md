@@ -1,17 +1,9 @@
 # Headline
 
 ``` mermaid
-sequenceDiagram
-    participant Alice
-    participant Bob
-    Alice->>John:hello John
-    loop healthcheck
-        John-->>John:fight against
-    end
-    Note right of John:rational
-    
-    John->>Alice:great!
-    John->>Bob:how about you
-    Bob->>John:good!
-
+graph LR
+    A[Hard edge] -->|Link text| B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
 ```
